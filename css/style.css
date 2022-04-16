@@ -8,6 +8,7 @@
 body {
   background-color: #fff;
   padding-top: 2rem;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -41,4 +42,44 @@ nav {
 }
 .nav-items input:focus {
   border-bottom-color: #000;
+}
+
+.hero-section {
+  padding: 5rem 0 8.3rem;
+  position: relative;
+}
+
+.hero-section .wrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+.wrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.wrapper blockquote {
+  max-width: 20rem;
+  border-left: 2px solid #999;
+  padding-left: 2rem;
+  color: #acabac;
+}
+.wrapper button {
+  border: none;
+  background-color: #ea625c;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.hero-section img {
+  position: absolute;
+  top: 0;
+  right: -11rem;
+  width: 25rem;
+  height: 28rem;
 }
