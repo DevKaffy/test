@@ -7,9 +7,14 @@
 
 body {
   background-color: #fff;
+  width: 100vw;
+  height: 100vh;
   padding-top: 2rem;
-  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -42,6 +47,12 @@ nav {
 }
 .nav-items input:focus {
   border-bottom-color: #000;
+}
+
+main {
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .hero-section {
@@ -143,7 +154,7 @@ nav {
   height: 2px;
   margin-right: 0.5rem;
   background-color: #ea625c;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .learn-more:hover::before {
