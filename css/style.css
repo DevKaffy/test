@@ -47,6 +47,7 @@ nav {
 .hero-section {
   padding: 5rem 0 8.3rem;
   position: relative;
+  border-bottom: 1.5px solid #999;
 }
 
 .hero-section .wrapper {
@@ -82,4 +83,111 @@ nav {
   right: -11rem;
   width: 25rem;
   height: 28rem;
+}
+.products-section {
+  padding: 2rem 0;
+}
+
+.products-section .wrapper-center {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.wrapper-center .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+.feature h4 {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.feature p {
+  max-width: 15rem;
+  /* font-size: 0.6rem; */
+  font-weight: 400;
+}
+
+.circles {
+  display: flex;
+  column-gap: 5px;
+  margin-top: 1rem;
+}
+
+.circles span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(132, 132, 132, 0.3);
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: #ea625c;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+.learn-more::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  margin-right: 0.5rem;
+  background-color: #ea625c;
+  transition: width 0.5s ease-in-out;
+}
+
+.learn-more:hover::before {
+  width: 2.5rem;
+}
+
+.wrapper-center .product {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+  max-width: 15rem;
+}
+
+.product-details blockquote {
+  max-width: 20rem;
+  border-left: 2px solid #999;
+  padding-left: 2rem;
+  color: #acabac;
+}
+.product-details button {
+  border: none;
+  background-color: #ea625c;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.product .img-wrapper {
+  height: 30rem;
+  width: 20rem;
+}
+
+.img-wrapper img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
